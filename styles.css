@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    background: linear-gradient(#bdc3c7, #2c3e50);
+    color: white; /* Цвет текста */
+    font-family: Arial, sans-serif; /* Шрифт */
+    display: flex;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    height: 100vh; /* Высота на весь экран */
+    flex-direction: column; /* Вертикальная ориентация элементов */
+}
+
+/* Контейнер для всех элементов */
+.container {
+    text-align: center; /* Центрирование текста внутри контейнера */
+}
+
+/* Стиль для монеты */
+.coin {
+    width: 300; /* Размер монеты */
+    cursor: pointer; /* Указатель при наведении */
+    margin-bottom: 30;
+    transition: transform 0.1s; /* Плавная анимация */
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Стиль для счетчика монет */
+.score {
+    font-size: 60px; /* Размер текста счетчика */
+    margin-bottom: 100;
+}
+
+/* Стиль для уровня */
+.level {
+    font-size: 24px; /* Размер текста уровня */
+    margin-top: 10px; /* Отступ сверху */
+}
+
+/* Контейнер для прогресс-бара */
+.progress-container {
+    width: 80%; /* Ширина контейнера прогресс-бара */
+    background-color: #555; /* Цвет фона прогресс-бара */
+    border-radius: 10px; /* Скругление углов */
+    margin: 20px auto; /* Автоматические отступы по бокам */
+}
+
+/* Стиль для прогресс-бара */
+.progress-bar {
+    height: 20px; /* Высота прогресс-бара */
+    width: 0; /* Начальная ширина прогресс-бара */
+    background: linear-gradient(to right, #8e9eab, #eef2f3); /* Градиентный цвет */
+    border-radius: 10px; /* Скругление углов */
+}
+
+/* Стили для кнопок */
+.tabs {
+    margin-top: 20px; /* Отступ сверху */
+}
+
+.tabs button {
+    background: linear-gradient(#e65c00, #F9D423); /* Цвет фона кнопок */
+    color: white; /* Цвет текста кнопок */
+    border: 0px; /* Убираем рамку */
+    border-radius: 50px; /*Делаем закругление*/
+    padding: 10px 20px; /* Отступы внутри кнопок */
+    cursor: pointer; /* Указатель при наведении */
+    margin: 5px; /* Отступ между кнопками */
+    width: 150px;
+    height: 70px;
+    font-size: 25;
+}
+
+/* Сообщение для недоступных разделов */
+.message {
+    margin-top: 20px; /* Отступ сверху */
+}
+
+#coin:active {
+    transform: scale(0.9); /* Уменьшение размера при нажатии */
+}
+
+.fade{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}

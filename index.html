@@ -1,0 +1,39 @@
+<html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RClicker | Tap and win</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Подключаем файл стилей -->
+    <link rel="icon" href="money.png" type="money.png">
+</head>
+<body>
+    <div class="container">
+        <!-- Счетчик монет -->
+        <div class="score" id="score">0</div>
+
+        <!-- Монета, по которой можно кликать -->
+        <img src="money.png" class="coin" id="coin" width="200" draggable="false">
+
+        <!-- Уровень игры -->
+        <div class="level" id="level">Level 1</div>
+
+        <!-- Прогресс-бар -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <!-- Кнопки для перехода между разделами -->
+        <div class="tabs">
+            <button onclick="showSection('friends')">Friends</button>
+            <button onclick="showSection('tasks')">Tasks</button>
+        </div>
+
+        <!-- Сообщение для недоступных разделов -->
+        <div class="message" id="message"></div>
+    </div>
+
+    <script src="script.js"></script> <!-- Подключаем файл с JavaScript -->
+</body>
+</html>
